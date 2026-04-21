@@ -1,0 +1,140 @@
+
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f7ea87;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== HEADER ===== */
+.header {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.logo,
+.search,
+.settings {
+  float: left;
+  height: 80px;
+  border: 3px solid #000;
+  background-color: #f8f7de;
+}
+
+/* tvoje percentá */
+.logo {
+  width: 15%;
+}
+
+.search {
+  width: 55%;
+}
+
+.search-form {
+  display: flex;
+  height: 100%; /* Vyplní celých 80px výšky hlavičky */
+  align-items: center; /* Vycentruje pole a tlačidlo vertikálne */
+  padding: 0 15px; /* Odstup od okrajov boxu */
+}
+
+.search-input {
+  flex-grow: 1; /* Pole sa roztiahne tak, aby vyplnilo miesto */
+  height: 40px; /* Výška samotného písacieho poľa */
+  padding: 0 10px;
+  border: 2px solid #000;
+  border-radius: 5px; /* Jemne zaoblené rohy pre modernejší vzhľad */
+}
+
+.search-button {
+  height: 40px;
+  margin-left: 10px;
+  padding: 0 15px;
+  background-color: #000; /* Čierne tlačidlo, aby ladilo s okrajmi */
+  color: #fff; /* Biely text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #444; /* Zmena farby pri prejdení myšou */
+}
+
+.settings {
+  width: 30%;
+}
+
+/* ===== MAIN ===== */
+.main {
+  overflow: hidden;
+}
+
+/* sidebar */
+.sidebar {
+  float: left;
+  width: 20%;
+  min-height: 500px;
+  border: 3px solid #000;
+  background-color: #f8f7de;
+}
+
+/* content */
+.content {
+  float: left;
+  width: 80%;
+  padding-left: 20px;
+}
+
+/* blocks */
+.ad {
+  height: 100px;
+  border: 3px solid #000;
+  background-color: #f8f7de;
+  margin-bottom: 20px;
+}
+
+.article {
+  min-height: 380px;
+  border: 3px solid #000;
+  background-color: #f8f7de;
+  padding: 20px; /* Toto pridaj, aby text nebol nalepený na čiernom okraji */
+  line-height: 1.6; /* Zlepší čitateľnosť článku */
+  overflow-y: auto; /* Ak bude textu veľa, v boxe sa objaví scrollbar */
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  clear: both;
+  margin-top: 20px;
+  height: 80px;
+  border: 3px solid #000;
+  background-color: #f8f7de;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  /* header stack */
+  .logo,
+  .search,
+  .settings {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+
+  /* main stack */
+  .sidebar,
+  .content {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .sidebar {
+    margin-bottom: 20px;
+  }
+}
