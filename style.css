@@ -114,119 +114,73 @@ body {
   background-color: #f8f7de;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE (MOBILE LAYOUT) ===== */
 @media (max-width: 768px) {
-
-  /* header stack */
-  .logo,
-  .search,
-  .settings {
-    float: none;
-    width: 100%;
-    height: auto;
+  
+  /* 1. HLAVIČKA: Logo | Search | Login (všetko vedľa seba) */
+  .logo, .search, .settings {
+    float: left; /* Musíme udržať float, aby boli v riadku */
+    height: 65px; /* Zjednotená výška pre mobil */
   }
 
-  /* main stack */
-  .sidebar,
-  .content {
-    float: none;
-    width: 100%;
-    padding-left: 0;
-  }
-
-  .sidebar {
-    margin-bottom: 20px;
-  }
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  /* Zrušíme plávanie a roztiahneme prvky na celú šírku */
-  .logo, .search, .settings, .sidebar, .content {
-    float: none;
-    width: 100%;
-  }
-
-  /* Upravíme výšky, aby to na mobile nevyzeralo divne */
-  .logo, .settings {
-    height: auto;
-    padding: 15px;
-    text-align: center;
-  }
-
-  .sidebar {
-    min-height: auto; /* Zrušíme tých 500px z PC verzie */
-    margin-bottom: 15px;
-  }
-
-  .content {
-    padding-left: 0; /* Zrušíme bočný odstup */
-  }
-
-  .search-form {
-    padding: 10px;
-  }
-
-  .article {
-    min-height: auto; /* Článok sa prispôsobí dĺžke textu */
-  }
-}
-
-@media (max-width: 768px) {
-  /* 1. HLAVIČKA: Rozdelenie na 3 stĺpce podľa nákresu */
-  .logo {
-    width: 20%; /* Malý štvorec pre logo */
-    height: 60px;
-  }
-
-  .search {
-    width: 60%; /* Stredný diel pre vyhľadávanie */
-    height: 60px;
-  }
-
-  .settings {
-    width: 20%; /* Ikona nastavení/loginu vpravo */
-    height: 60px;
+  .logo { width: 20%; }
+  .search { width: 60%; }
+  .settings { 
+    width: 20%; 
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 12px; /* Zmenšený text login/settings */
   }
 
   .search-form {
-    padding: 0 5px; /* Menej miesta na bokoch, aby sa to zmestilo */
+    padding: 0 5px;
   }
 
-  .search-input {
-    height: 35px; /* Trochu subtílnejšie pole */
-    font-size: 12px;
-  }
-
-  .search-button {
+  .search-input, .search-button {
     height: 35px;
-    padding: 0 8px;
-    font-size: 12px;
+    font-size: 11px;
   }
 
-  /* 2. MAIN: Sidebar a Content vedľa seba */
+  /* 2. MAIN: Sidebar a Content (vedľa seba podľa nákresu) */
   .sidebar {
-    width: 25%; /* Úzky pás pre menu podľa tvojho nákresu */
-    min-height: 400px; /* Aby nebol príliš krátky */
-    float: left; /* Musíme udržať float! */
+    float: left;
+    width: 25%;
+    min-height: auto; /* Zrušíme tých fixných 500px */
+    padding: 10px 5px;
+  }
+
+  .sidebar nav ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  .sidebar nav ul li a {
+    font-size: 12px; /* Menšie písmo pre úzky sidebar */
   }
 
   .content {
-    width: 75%; /* Zvyšok pre článok */
-    float: left; /* Musíme udržať float! */
-    padding-left: 10px; /* Menšia medzera */
+    float: left;
+    width: 75%;
+    padding-left: 10px;
   }
 
-  /* 3. DROBNOSTI */
+  /* 3. OBSAH V CONTENT */
   .ad {
-    height: 80px; /* O niečo nižšia reklama na mobile */
+    height: 70px; /* Kompaktnejšia reklama */
+    margin-bottom: 10px;
   }
 
   .article {
-    padding: 10px;
-    font-size: 14px; /* Menšie písmo, aby sa lepšie čítalo na šírku */
+    min-height: auto;
+    padding: 15px;
+    font-size: 13px; /* Lepšia čitateľnosť na malom displeji */
+  }
+
+  /* 4. FOOTER */
+  .footer {
+    height: auto;
+    padding: 15px;
+    text-align: center;
   }
 }
