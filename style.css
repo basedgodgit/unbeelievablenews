@@ -1,7 +1,7 @@
-
- * {
+* {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   background-color: #f9c901; 
@@ -9,16 +9,15 @@ body {
 }
 
 .container {
-  background-color: 	#f9c901;
+  background-color: #f9c901;
   width: 100%;
-}
+} 
 
 .header {
-  overflow: hidden;
+  width: 100%;
   margin-bottom: 20px;
 }
-
-.logo, .search, .settings, .sidebar, .content {
+.logo, .search, .settings, .sidebar, .content-box {
   float: left;
   border: 3px solid #000;
   background-color: #f8f7de;
@@ -32,27 +31,22 @@ body {
 .search {
   width: 55%;
   height: 80px;
-  padding: 15px; 
 }
 
 .settings {
   width: 30%;
   height: 80px;
 }
-
 .search-form {
-  float: left;
-  width: 100%;
-  height: 80px; 
-  padding-top: 20px; 
+  padding-top: 15px; 
   padding-left: 15px;
 }
 
 .search-input {
   float: left;
-  width: 60%; 
+  width: 65%; 
   height: 40px;
-  padding: 10px;
+  padding: 0 10px;
   border: 2px solid #000;
   border-radius: 5px;
 }
@@ -68,54 +62,43 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-
-.search-button:hover {
-  background-color: #444; 
-}
-
-.settings {
-  width: 30%;
-}
-
 .main {
+  width: 100%;
 }
 
 .sidebar {
-  float: left;
   width: 20%;
   min-height: 500px;
-  border: 3px solid #000;
-  background-color: #f8f7de;
 }
 
 .content {
   float: left;
   width: 80%;
 }
-
-.ad {
- height: 100px;
+.ad, .article {
   border: 3px solid #000;
   background-color: #f8f7de;
-  margin-bottom: 20px;
   margin-left: 20px;
+}
+
+.ad {
+  height: 100px;
+  margin-bottom: 20px;
 }
 
 .article {
- min-height: 380px;
-  border: 3px solid #000;
-  background-color: #f8f7de;
+  min-height: 380px;
   padding: 20px; 
-  line-height: 1.0;
-  margin-left: 20px;
+  line-height: 1.4; 
 }
-
 .footer {
- clear: both; 
+  clear: both; 
   margin-top: 20px;
   height: 80px;
   border: 3px solid #000;
   background-color: #f8f7de;
+  padding: 25px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
