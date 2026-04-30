@@ -12,6 +12,7 @@ body {
 .container {
   background-color: 	#f9c901;
   width: 100%;
+}
 
 .header {
   overflow: hidden;
@@ -52,7 +53,7 @@ body {
   float: left;
   width: 60%; 
   height: 40px;
-  padding: 0 10px;
+  padding: 10px;
   border: 2px solid #000;
   border-radius: 5px;
 }
