@@ -24,7 +24,6 @@ body {
   background-color: #f8f7de;
 }
 
-/* tvoje percentá */
 .logo {
   width: 15%;
 }
@@ -35,32 +34,33 @@ body {
 
 .search-form {
   display: flex;
-  height: 100%; /* Vyplní celých 80px výšky hlavičky */
-  align-items: center; /* Vycentruje pole a tlačidlo vertikálne */
-  padding: 0 15px; /* Odstup od okrajov boxu */
+  height: 100%; 
+  align-items: center; 
+  padding: 0 15px; 
 }
 
 .search-input {
-  flex-grow: 1; /* Pole sa roztiahne tak, aby vyplnilo miesto */
-  height: 40px; /* Výška samotného písacieho poľa */
+  float: left;
+  width: 40%
+  height: 40px; 
   padding: 0 10px;
   border: 2px solid #000;
-  border-radius: 5px; /* Jemne zaoblené rohy pre modernejší vzhľad */
+  border-radius: 5px; 
 }
 
 .search-button {
   height: 40px;
   margin-left: 10px;
   padding: 0 15px;
-  background-color: #000; /* Čierne tlačidlo, aby ladilo s okrajmi */
-  color: #fff; /* Biely text */
+  background-color: #000; 
+  color: #fff; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .search-button:hover {
-  background-color: #444; /* Zmena farby pri prejdení myšou */
+  background-color: #444; 
 }
 
 .settings {
@@ -100,12 +100,12 @@ body {
   min-height: 380px;
   border: 3px solid #000;
   background-color: #f8f7de;
-  padding: 20px; /* Toto pridaj, aby text nebol nalepený na čiernom okraji */
-  line-height: 1.6; /* Zlepší čitateľnosť článku */
-  overflow-y: auto; /* Ak bude textu veľa, v boxe sa objaví scrollbar */
+  padding: 20px; 
+  line-height: 1.6; 
+  overflow-y: auto; 
 }
 
-/* ===== FOOTER ===== */
+
 .footer {
   clear: both;
   margin-top: 20px;
@@ -156,7 +156,7 @@ body {
   }
 
   .sidebar nav ul li a {
-    font-size: 12px; /* Menšie písmo pre úzky sidebar */
+    font-size: 12px; 
   }
 
   .content {
@@ -165,19 +165,19 @@ body {
     padding-left: 10px;
   }
 
-  /* 3. OBSAH V CONTENT */
+  
   .ad {
-    height: 70px; /* Kompaktnejšia reklama */
+    height: 70px; 
     margin-bottom: 10px;
   }
 
   .article {
     min-height: auto;
     padding: 15px;
-    font-size: 13px; /* Lepšia čitateľnosť na malom displeji */
+    font-size: 13px; 
   }
 
-  /* 4. FOOTER */
+  
   .footer {
     height: auto;
     padding: 15px;
