@@ -134,12 +134,12 @@ body {
     padding: 10px 5px;
   }
 
-  .sidebar nav ul {
+  .sidebar{
     padding: 0;
     list-style: none;
   }
 
-  .sidebar nav ul li a {
+  .sidebar {
     font-size: 12px; 
   }
 
