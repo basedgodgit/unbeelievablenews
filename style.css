@@ -71,6 +71,10 @@ body {
   min-height: 500px;
 }
 
+.sidebar li:hover{
+color: purple;
+}
+
 .content {
   float: left;
   width: 80%;
