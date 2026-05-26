@@ -72,7 +72,11 @@ body {
 }
 
 .sidebar li:hover{
-color: purple;
+color: red;
+}
+
+sidebar a:hover{
+  color: red;
 }
 
 .content {
