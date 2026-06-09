@@ -100,12 +100,20 @@ sidebar a:hover{
   line-height: 1.4; 
 }
 
+.row {
+  width: 100%;
+  overflow: hidden; 
+  margin-top: 20px;
+}
+
 .column {
   float: left;
-  width: 18%;
+  width: 20%;
   padding: 10px;
+  box-sizing: border-box;
   height: 300px; 
   margin: 1%;
+  text-align: center
 }
 
 .footer {
