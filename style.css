@@ -99,6 +99,15 @@ sidebar a:hover{
   padding: 20px; 
   line-height: 1.4; 
 }
+
+.column {
+  float: left;
+  width: 18%;
+  padding: 10px;
+  height: 300px; 
+  margin: 1%;
+}
+
 .footer {
   clear: both; 
   margin-top: 20px;
@@ -107,20 +116,6 @@ sidebar a:hover{
   background-color: #f8f7de;
   padding: 25px;
   text-align: center;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 18%;
-  padding: 10px;
-  height: 300px; 
-  margin: 1%;
 }
 
 @media (max-width: 768px) {
