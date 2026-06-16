@@ -75,7 +75,7 @@ body {
 color: red;
 }
 
-sidebar a:hover{
+.sidebar a:hover{
   color: red;
 }
 
@@ -121,8 +121,9 @@ sidebar a:hover{
 .column:hover {
   width: 30%;
   height: 350px;
-  transform: scale(1.05)
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2)
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
 
 .footer {
   clear: both; 
