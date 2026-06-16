@@ -115,7 +115,7 @@ sidebar a:hover{
   height: 300px; 
   margin: 1%;
   text-align: center;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .column:hover {
@@ -193,6 +193,7 @@ sidebar a:hover{
     list-style: none;
     font-size: 12px;
     margin-bottom: 10px;
+    text-align: left;
   }
 
   .content {
