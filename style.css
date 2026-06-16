@@ -215,6 +215,20 @@ sidebar a:hover{
     font-size: 13px;
   }
 
+    .column {
+    width: 50%;
+    height: auto;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .column:hover {
+    width: 50%;
+    height: auto;
+    transform: none;
+    box-shadow: none;
+  }
+
   .footer {
     clear: both;
     height: auto;
